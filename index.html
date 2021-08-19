@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Survey Form
+	</title>
+
+	<style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: #2791cd;
+			font-family: Verdana;
+			text-align: center;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #72bbe4;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Student Survey Form</h1>
+
+	<!-- Create Form -->
+	<form id="form">
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+
+			<!-- Input Type Email-->
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Age
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="age"
+				placeholder="Enter your age" />
+		</div>
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+				Which option best describes you?
+			</label>
+
+			<!-- Dropdown options -->
+			<select name="role" id="role">
+				<option value="student">Student</option>
+				<option value="intern">Intern</option>
+				<option value="professional">
+					Professional
+				</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label>
+				Will you recommend this college to others?
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Yes</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">No</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed">Maybe</input>
+			</label>
+		</div>
+    <div class="form-control">
+    			<label>
+    				Are you satisfied with the teaching staff and their teaching methods?
+    			</label>
+    			<!-- Input Type Radio Button -->
+    			<label for="1">
+    				<input type="radio"
+    					id="1"
+    					name="A">Extremely satisfied</input>
+    			</label>
+    			<label for="2">
+    				<input type="radio"
+    					id="2"
+    					name="A">Very satisfied</input>
+    			</label>
+    			<label for="3">
+    				<input type="radio"
+    					id="3"
+    					name="A">Satisfied</input>
+    			</label>
+<label for="4">
+    				<input type="radio"
+    					id="4"
+    					name="A">Neutral</input>
+    			</label>
+<label for="5">
+    				<input type="radio"
+    					id="5"
+    					name="A">Dissatisfied</input>
+    			</label>
+<label for="6">
+    				<input type="radio"
+    					id="6"
+    					name="A">Very dissatisfied</input>
+    			</label>
+<label for="7">
+    				<input type="radio"
+    					id="7"
+    					name="A">Extremely dissatisfied</input>
+    			</label>
+    		</div>
+
+        <div class="form-control">
+        <label> Are you satisfied with the teaching staff and their teaching practices?</label>
+        <!-- Input Type Radio Button -->
+        <label for="Y">
+          <input type="radio"
+            id="Y"
+            name="s">Yes</input>
+        </label>
+        <label for="N">
+          <input type="radio"
+            id="N"
+            name="s">No</input>
+            </label>
+            </div>
+
+        <div class="form-control">
+    			<label>
+    			How satisfied are you with the facilities provided by the college?
+    			</label>
+    			<!-- Input Type Radio Button -->
+    			<label for="a">
+    				<input type="radio"
+    					id="a"
+    					name="B">Extremely satisfied</input>
+    			</label>
+    			<label for="b">
+    				<input type="radio"
+    					id="b"
+    					name="B">Very satisfied</input>
+    			</label>
+    			<label for="c">
+    				<input type="radio"
+    					id="c"
+    					name="B">Satisfied</input>
+    			</label>
+<label for="d">
+    				<input type="radio"
+    					id="d"
+    					name="B">Neutral</input>
+    			</label>
+<label for="e">
+    				<input type="radio"
+    					id="e"
+    					name="B">Dissatisfied</input>
+    			</label>
+<label for="f">
+    				<input type="radio"
+    					id="f"
+    					name="B">Very dissatisfied</input>
+    			</label>
+<label for="g">
+    				<input type="radio"
+    					id="g"
+    					name="B">Extremely dissatisfied</input>
+    			</label>
+    		</div>
+        <div class="form-control">
+    			<label> Was it easy to obtain the necessary resources from the college library?
+    			</label>
+    			<!-- Input Type Radio Button -->
+    			<label for="Yes">
+    				<input type="radio"
+    					id="Yes"
+    					name="if">Yes</input>
+    			</label>
+    			<label for="No">
+    				<input type="radio"
+    					id="No"
+    					name="if">No</input>
+    			</label>
+          </div>
+
+              <div class="form-control">
+    			<label> Do you think faculty and support staff at the college were helpful?</label>
+    			<!-- Input Type Radio Button -->
+    			<label for="VH">
+    				<input type="radio"
+    					id="VH"
+    					name="h">Very helpful</input>
+    			</label>
+    			<label for="H">
+    				<input type="radio"
+    					id="H"
+    					name="h">Helpful</input>
+    			</label>
+    			<label for="NH">
+    				<input type="radio"
+    					id="NH"
+    					name="h">Neither helpful nor unhelpful</input>
+    			</label>
+<label for="UH">
+    				<input type="radio"
+    					id="UH"
+    					name="h">Unhelpful</input>
+    			</label>
+<label for="VUH">
+    				<input type="radio"
+    					id="VUH"
+    					name="h">Very unhelpful</input>
+    			</label>
+          </div>
+
+          <div class="form-control">
+    			<label> Given a chance, are you willing to pursue another course at the college?</label>
+    			<!-- Input Type Radio Button -->
+    			<label for="DY">
+    				<input type="radio"
+    					id="DY"
+    					name="d">Definitely, Yes</input>
+    			</label>
+    			<label for="PY">
+    				<input type="radio"
+    					id="PY"
+    					name="d">Probably, Yes</input>
+    			</label>
+    			<label for="PN">
+    				<input type="radio"
+    					id="PN"
+    					name="d">Probably, No</input>
+    			</label>
+<label for="DN">
+    				<input type="radio"
+    					id="DN"
+    					name="d">Definitely, No</input>
+    			</label>
+<label for="CS">
+    				<input type="radio"
+    					id="CS"
+    					name="d">Can't say</input>
+    			</label>
+          </div>
+
+<div class="form-control">
+    			<label> How satisfied are you with the accommodation?</label>
+    			<!-- Input Type Radio Button -->
+    			<label for="ext">
+    				<input type="radio"
+    					id="ext"
+    					name="select">They are too few</input>
+    			</label>
+    			<label for="very">
+    				<input type="radio"
+    					id="very"
+    					name="select">Extremely satisfied</input>
+    			</label>
+    			<label for="sat">
+    				<input type="radio"
+    					id="sat"
+    					name="select">Very satisfied</input>
+    			</label>
+<label for="neu">
+    				<input type="radio"
+    					id="neu"
+    					name="Satisfied">Neutral</input>
+    			</label>
+<label for="dis">
+    				<input type="radio"
+    					id="dis"
+    					name="select">Dissatisfied</input>
+    			</label>
+<label for="vdis">
+    				<input type="radio"
+    					id="vdis"
+    					name="select">Very dissatisfied</input>
+    			</label>
+<label for="extd">
+    				<input type="radio"
+    					id="extd"
+    					name="select">Extremely dissatisfied</input>
+    			</label>
+    		</div>
+
+        <div class="form-control">
+        <label> Do you think your siblings or friends will be benefited by studying at this college?</label>
+        <!-- Input Type Radio Button -->
+        <label for="Def">
+          <input type="radio"
+            id="Def"
+            name="e">Definitely, Yes</input>
+        </label>
+        <label for="Pro">
+          <input type="radio"
+            id="Pro"
+            name="e">Probably, Yes</input>
+        </label>
+        <label for="ProN">
+          <input type="radio"
+            id="ProN"
+            name="e">Probably, No</input>
+        </label>
+        <label for="DefN">
+          <input type="radio"
+            id="DefN"
+            name="e">Definitely, No</input>
+        </label>
+        <label for="Cnt">
+          <input type="radio"
+            id="Cnt"
+            name="e">Can't say</input>
+        </label>
+        </div>
+
+        <div class="form-control">
+            			<label> How many hours a week do you work your part-time job?</label>
+            			<!-- Input Type Radio Button -->
+            			<label for="dont">
+            				<input type="radio"
+            					id="dont"
+            					name="hrs">I don’t have a job</input>
+            			</label>
+            			<label for="1-10">
+            				<input type="radio"
+            					id="1-10"
+            					name="hrs">1-10 hours a week</input>
+            			</label>
+            			<label for="11-15">
+            				<input type="radio"
+            					id="11-15"
+            					name="hrs">11-15 hours a week</input>
+            			</label>
+        <label for="16-20">
+            				<input type="radio"
+            					id="16-20"
+            					name="hrs">16-20 hours a week</input>
+            			</label>
+        <label for="more">
+            				<input type="radio"
+            					id="more"
+            					name="hrs">More than 20 hours a week</input>
+            			</label>
+        </div>
+
+<div class="form-control">
+    			<label> What do you think about extracurricular activities?</label>
+    			<!-- Input Type Radio Button -->
+    			<label for="few">
+    				<input type="radio"
+    					id="few"
+    					name="f">They are too few</input>
+    			</label>
+    			<label for="right">
+    				<input type="radio"
+    					id="right"
+    					name="f">They are just right</input>
+    			</label>
+    			<label for="any">
+    				<input type="radio"
+    					id="any"
+    					name="f">I was overwhelmed with the number</input>
+    			</label>
+          </div>
+
+          <div class="form-control">
+          			<label>What kind of surveys are you interested to take in future
+          				<small>(Check all if applicable)</small>
+          			</label>
+          			<!-- Input Type Checkbox -->
+          			<label for="inp-1">
+          				<input type="checkbox"
+          					name="inp">Social Surveys</input></label>
+          			<label for="inp-2">
+          				<input type="checkbox"
+          					name="inp">Student Surveys</input></label>
+          			<label for="inp-3">
+          				<input type="checkbox"
+          					name="inp">Digital Surveys</input></label>
+          			<label for="inp-4">
+          				<input type="checkbox"
+          					name="inp">Political Surveys</input></label>
+          			<label for="inp-5">
+          				<input type="checkbox"
+          					name="inp">Informative Surveys</input></label>
+          			<label for="inp-6">
+          				<input type="checkbox"
+          					name="inp">Gaming Surveys</input></label>
+          			<label for="inp-7">
+          				<input type="checkbox"
+          					name="inp">Science Surveys</input></label>
+
+          		</div>
+
+		<div class="form-control">
+			<label for="comment">
+				Any comments or suggestions
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+</body>
+
+</html>
